@@ -3,27 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/contact.css" />
     <title>Contact</title>
   </head>
   <body>
-    <div class="background-image">
-      <img src="/assets/logo-ALTA@2x.png" alt="Logo Alta" class="logo">
+    <div class="container-fluid content-container">
+      <div class="row w-100">
+        <div class="col-lg-6 col-md-12 background-image">
+          <img src="/assets/logo-ALTA-v2@2x.png" alt="Logo Alta" class="logo img-fluid" />
+        </div>
+        <div class="col-lg-6 col-md-12 form-container">
+          <form class="contact-form">
+            <h4 class="mb-4">Contact Us</h4>
+            <div class="form-group mb-3">
+              <label for="full-name">Full Name</label>
+              <input type="text" class="form-control" id="full-name" placeholder="Winda Pramesti"/>
+            </div>
+            <div class="form-group mb-3">
+              <label for="email-address">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email-address"
+                placeholder="example@alterra.id"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="phone-number">Phone Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="phone-number"
+                placeholder="085347823415"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="role">Role</label>
+              <select class="form-control" id="role"></select>
+            </div>
+            <div class="form-group mb-3">
+              <label for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <div class="form-container">
-      <h3>Contact Us</h3>
-      <form action="">
-        <label for="full-ame">Full Name</label>
-        <input type="text" placeholder="Winda Pramesti">
-        <label for="email-adress">Email Adress</label>
-        <input type="email" name="email-adress" id="email-adress" placeholder="example@alterra.id">
-        <label for="phone-number">Phone Number</label>
-        <input type="number" id="phone-number" placeholder="085347823415">
-        <label for="role">Role</label>
-        <select name="role" id="role"></select>
-        <label for="message">Message</label>
-        <textarea name="message" id="message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
