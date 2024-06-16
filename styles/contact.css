@@ -86,3 +86,8 @@ body {
 input {
   border: #707070 1px solid;
 }
+
+label.required::after {
+  content: " *";
+  color: red;
+}
